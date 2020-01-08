@@ -1,0 +1,98 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.counters {
+  font-size: 14px;
+
+.strong {
+  display: block;
+  font-size: 2em;
+
+}
+
+.vote, .answer {
+  width: 60px;
+  height: 25px;
+
+}
+
+  .status {
+    &.unanswered {
+      border: none;
+    }
+
+    &.answered {
+      border: 1px solid $color-green;
+      color: $color-green;
+    }
+
+    &.answered-accepted {
+      background: $color-green;
+      color: $color-white;
+    }
+
+  }
+
+}
+
+form.form-delete {
+  display: inline;
+}
+
+.vote-controls {
+  min-width: 60px;
+  text-align: center;
+  color: $gray-700;
+
+  span, a {
+    margin: 0 3px;
+  }
+
+  span {
+    &.votes-count {
+      font-size:25px;
+    }
+    &.favorites-count {
+      font-size:12px;
+      color: black;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    color: $gray-600;
+
+    &.off, &.off:hover {
+      color: $gray-500;
+    }
+
+    &.favorite {
+      &.favorited, &.favorited:hover {
+        color: $warning;
+      }
+    }
+
+    &.vote-accepted {
+      color: $green;
+    }
+  }
+}
+
+.answer-button {
+  margin-top: 33px;
+}
+
+.post {
+  padding: 20px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($black, .1);
+  }
+}
